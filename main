@@ -1,0 +1,136 @@
+/******************************************************************************
+Author Name : Jeevan vaishnav
+Project : Console base : Food House 
+Date : 23/01/2021
+Language: C Language
+*******************************************************************************/
+#include <stdio.h>
+#include<conio.h>
+
+int main()
+{
+   char choice,buy;  
+   int burger=0,french=0,pizza=0,sandwiche=0,b,qty,amount;
+   printf("\n\t*****FAST FOOD HOUSE*****\n"); 
+   printf("\nB = BURGER\nF = FRENCH FRY\nP = PIZZA\nS = SANDWICHES\n");
+   printf("\nSelect Any One :"); 
+   scanf("%c",&choice);
+   switch(choice){
+       /*if user entered b or B* then execute the block*/
+       case 'B':
+       case 'b':
+       printf("your order is Burger\n");
+       printf("\n\t****BURGER PRICE****\n");
+       printf("\tSmall = Rs 250\n");
+       printf("\tMediam = Rs 300\n");
+       printf("\tHigh = Rs 450\n");
+       printf("\n\t**************************\n");
+       printf("\nBuy now !! ( Y/N)\n");
+       scanf(" %c",&buy);
+       if(buy == 'Y' || buy == 'y'){
+           printf("please enter your quantity:\n");
+           scanf("%d",&qty);
+           printf("Enter your price as per below price list:\n");
+           scanf("%d",&amount);
+        burger = amount*qty;
+        printf("Your total charges is :%d",burger);
+        break;
+       }else if(buy == 'N' || buy =='n'){
+           printf("You Have Selected N :TATA BYE BYE\n");
+       }else{
+           printf("Bad Input!\n");
+       }
+   
+        break;
+        /*if user entered f or F* then execute the block*/
+       case 'F':
+       case 'f':
+       printf("your order is french\n");
+       printf("\n\t****FRENCH PRICE****\n");
+       printf("\tSmall = Rs 450\n");
+       printf("\tMediam = Rs 500\n");
+       printf("\tHigh = Rs 650\n");
+       printf("\n\t**************************\n");
+       printf("\nBuy now !! ( Y/N)\n");
+       scanf(" %c",&buy);
+       if(buy == 'Y' || buy == 'y'){
+           printf("please enter your quantity:\n");
+           scanf("%d",&qty);
+           printf("Enter your price as per below price list:\n");
+           scanf("%d",&amount);
+        french = amount*qty;
+        printf("Your total charges is :%d",french);
+        break;
+       }else if(buy == 'N' || buy =='n'){
+           printf("You Have Selected N :TATA BYE BYE\n");
+       }else{
+           printf("Bad Input!\n");
+       }
+        break;
+        
+        
+         /*if user entered p or P* then execute the block*/
+       case 'P':
+       case 'p':
+       printf("your order is Pizza\n");
+       printf("\n\t****PIZZA PRICE****\n");
+       printf("\tSmall = Rs 450\n");
+       printf("\tMediam = Rs 500\n");
+       printf("\tHigh = Rs 650\n");
+       printf("\n\t**************************\n");
+       printf("\nBuy now !! ( Y/N)\n");
+       scanf(" %c",&buy);
+       if(buy == 'Y' || buy == 'y'){
+           printf("please enter your quantity:\n");
+           scanf("%d",&qty);
+           printf("Enter your price as per below price list:\n");
+           scanf("%d",&amount);
+        pizza = amount*qty;
+        printf("Your total charges is :%d",pizza);
+        break;
+       }else if(buy == 'N' || buy =='n'){
+           printf("You Have Selected N :TATA BYE BYE\n");
+       }else{
+           printf("Bad Input!\n");
+       }
+        break;
+        
+      
+      
+      
+        /*if user entered s or S* then execute the block*/
+       case 'S':
+       case 's':
+       printf("your order is sandwiches\n");
+       printf("\n\t****SANDWICHES PRICE****\n");
+       printf("\tSmall = Rs 450\n");
+       printf("\tMediam = Rs 500\n");
+       printf("\tHigh = Rs 650\n");
+       printf("\n\t**************************\n");
+       printf("\nBuy now !! ( Y/N)\n");
+       scanf(" %c",&buy);
+       if(buy == 'Y' || buy == 'y'){
+           printf("please enter your quantity:\n");
+           scanf("%d",&qty);
+           printf("Enter your price as per below price list:\n");
+           scanf("%d",&amount);
+        sandwiche = amount*qty;
+        printf("Your total charges is :%d",sandwiche);
+        break;
+       }else if(buy == 'N' || buy =='n'){
+           printf("You Have Selected N :TATA BYE BYE\n");
+       }else{
+           printf("Bad Input!\n");
+       }
+        break;
+       default:
+       printf("Bad Input !! Try Again\n");
+   }
+
+    getchar();
+    printf("\nThank you for Visit our FAST FOOT HOUSE\n");
+    getchar();
+    return 0;
+}
+
+
